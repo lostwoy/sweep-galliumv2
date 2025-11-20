@@ -14,7 +14,7 @@
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <220>;
             quick-tap-ms = <150>;
             require-prior-idle-ms = <100>;
@@ -46,8 +46,8 @@
             display-name = "Nav Layer";
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │  +       │
-            &none      &none      &none      &none      &none         &none      &none      &none      &none      &kp PLUS
+        //│          │          │          │          │          │   │          │          │          │          │  =       │
+            &none      &none      &none      &none      &none         &none      &none      &none      &none      &kp EQUAL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ Gui      │  Alt     │  Shift   │  Ctrl    │          │   │ LEFT     │ DOWN     │ UP       │ RIGHT    │  -       │
             &kp LGUI   &kp LALT   &kp LSHFT &kp LCTRL   &none         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp MINUS
